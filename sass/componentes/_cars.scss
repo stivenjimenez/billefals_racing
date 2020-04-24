@@ -1,0 +1,12 @@
+h2{
+  text-align: center;
+}
+.car{
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  .car__foto img{
+    max-width: 100%;
+    padding: 5px;
+  }
+}

@@ -1,0 +1,41 @@
+.header{
+  display: flex;
+  width:100% ;
+  height: 50px;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  color: $color-claro;
+  background-color: $color-principal;
+  position: fixed;
+  z-index: 2;
+  & a{
+    text-decoration: none;
+  }
+  &__logo{
+    font-family: $fuentelogo;
+    letter-spacing: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $color-claro;
+  }
+  &__nav{
+    display: flex;
+    &__items{
+      display: inherit;
+      list-style: none;
+      margin: 0;
+      text-transform:uppercase;
+      font-family: $fuente2;
+      li a{
+        margin-right: 40px;
+        color: $color-claro;
+        text-decoration: none;
+      }
+      li a:hover{
+        color:$color-secundario;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,63 @@
+include _configuraciones.pug
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Billefals Racing
+    link(rel="stylesheet", href="../css/index.css")
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lato:wght@400;700&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+  body
+    header.header
+      a(href="#").header__logo billefals racing
+      nav.header__nav
+        ul.header__nav__items
+          li: a(href="#") team
+          li: a(href="#") car
+          li: a(href="#") driver
+          li: a(href="#") history
+    seccion.intro
+      img(src="../images/renaul21yhondanoche.jpg", alt="carro de carreras")
+      h2 Billefals Racing
+    section.main
+    .main__container
+      h1 HISTORY
+      p Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptatum molestiae reiciendis ratione aliquam voluptas consequatur soluta praesentium dicta vitae temporibus, minus fuga doloremque omnis provident ipsam, quia, repellendus officiis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, minima? Officiis, sint reiciendis. Aperiam tempore iste autem! Ipsum, libero, facilis iste quia eum debitis tenetur nihil, repellat fuga delectus culpa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta non illum velit aliquam saepe, necessitatibus deserunt aut sunt totam reprehenderit molestiae inventore tempora sed adipisci harum officiis. Omnis, non quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione pariatur dolorum corporis natus facere magnam voluptatibus velit corrupti fugiat sit placeat dignissimos, nostrum quo, quaerat neque explicabo. Aliquid, voluptates perspiciatis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id unde quis, similique optio sunt dolore modi exercitationem consectetur numquam tenetur culpa sequi magnam aliquam cupiditate voluptates ullam pariatur accusamus facere?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quae excepturi, sequi ad alias vitae debitis sapiente commodi reiciendis id, cumque cupiditate! Neque incidunt, modi laudantium expedita aperiam mollitia officia? ipsum dolor sit amet consectetur adipisicing elit. Deleniti animi enim cum quaerat dignissimos laboriosam eum voluptas reprehenderit inventore officiis ullam perspiciatis, iure facilis mollitia dolorem! Consectetur delectus cupiditate eum?
+      
+      .main__container__boton
+        a(href="#") read more
+        h2 next race  
+    section.contador
+      +contador( "12" , "day" )
+      +contador( "7:00" , "hours" )
+      +contador( "50:35" , "minutes" )
+  section.team
+    h2 team 
+    .team__foto: img(src="../images/team.jpg", alt="")
+    .main__container__boton
+        a(href="#") see more
+  h2.textcar cars
+  seccion.car
+      .car__foto: img(src="../images/corvett2.jpg", alt="")
+      .car__foto: img(src="../images/corvett.jpg", alt="")
+      .car__foto: img(src="../images/fiar131-3.jpg", alt="")
+      .car__foto: img(src="../images/fiat131-2.jpg", alt="")
+      .car__foto: img(src="../images/renaul21fueradedia.jpg", alt="")
+      .car__foto: img(src="../images/renault21tierra.jpg", alt="")
+      .car__foto: img(src="../images/anaenpista.jpg", alt="")
+      .car__foto: img(src="../images/cartrojoana.jpg", alt="")
+.main__container__boton
+  a(href="#") see more  
+         
+footer
+  .logo--footer
+    a(href="#").header__logo billefals racing
+  .social-linck
+    a(href="https://www.facebook.com/billefalsracing/").social-link.facebook
+    a(href="https://twitter.com/home").social-link.twitter
+    a(href="https://www.instagram.com/billefalsracing/").social-link.instagram
+        
+
+
+
+    

@@ -1,0 +1,64 @@
+.main__container{
+  width: 70%;
+  margin: 0 auto;
+  font-family: $fuente1;
+  font-size: 18px;
+  line-height: 2em;
+  h1{
+    font-family: $fuente2;
+  }
+  &__boton{
+    text-align: center;
+    margin: 50px 0 ;
+
+   
+    & a{
+      border: 1px solid $color-terciario;
+      border-radius: 3px;
+      padding: 10px;
+      color: $color-principal;
+      box-shadow: -5px 6px 5px 1px #d6d6d6;
+    }
+    & a:hover{
+      border: none;
+      background-color: $color-secundario;
+      color:$color-claro;
+      text-decoration: none;
+      box-shadow: -5px 6px 5px 1px #d6d6d6;
+    }
+  }
+}
+
+.contador{
+  display: flex;
+  width: 50%;
+  margin: 20px auto 85px auto;
+  justify-content: space-evenly;
+  height: 50px;
+}
+
+.dias{
+  display: flex;
+  background-color:$color-principal;
+  width: 150px;
+  height: 70px;
+  border-radius:4px ;
+  color: $color-claro;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  box-shadow: -5px 6px 5px 1px #d6d6d6;
+  &__numero{
+    font-size: 25px;
+    text-transform: uppercase;
+  }
+  &__dia{
+    border-top: 1px solid $color-claro;
+  }
+
+}
+h2{
+  margin-top: 20px;
+  text-transform: uppercase;
+}
